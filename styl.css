@@ -1,0 +1,278 @@
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+html {
+          background: black;
+}
+body {
+    font: 14px "Poppins";
+    background: white;
+    color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0px 0px 0px;
+    min-width: 960px;
+}
+
+body > header {
+    height: 100px;
+    width: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    align-items: center;
+}
+
+#logo {
+    height: 40px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('obrazky/logo.png') no-repeat;
+    background-size: 40px 40px;
+}
+
+#logo > * {
+    margin: 0 0 0 50px;
+}
+
+#logo h1 {
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    color: white;
+}
+
+#logo h1 span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#logo small {
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 90%;
+    media max-width: 768px 
+    nav ul 
+    flex-direction: column;
+
+}
+
+nav ul li {
+    padding: 40px 35px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px; 
+}
+
+nav ul a:hover,
+.aktivni a {
+    border-bottom: 2px solid white;
+}
+
+article {
+    margin: 0 auto;
+    max-width: 1130px;
+    padding: 50px 50px 100px 50px;
+
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    padding: 10px 0;
+    color: #black;
+}
+
+article h1 {
+    margin: 0;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+    border-bottom: 4px solid black;
+}
+
+article h2 {
+    font-size: 2em;
+}
+
+article header {
+    height: 80px;
+}
+
+article section p {
+    margin-bottom: 1.5em;
+    line-height: 1.8em;
+    article p 
+    line-height: 1.6; 
+
+}
+
+article section a {
+    color: black;
+}
+
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    height: 50px; 
+    color: white;
+    background: black;
+    padding: 0 0 50px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.avatar{
+	float: right;
+	width: 350px;
+	padding-left: 10px;
+	filter: grayscale(0);
+}
+
+.avatar2 {
+    float: right;
+    width: 400px;
+    padding-left: 10px;
+    filter: grayscale(0);
+    position: relative;
+    bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .avatar2 {
+        width: 100%;
+        max-width: none; 
+        padding: 0; 
+        margin-top: 20px; 
+        position: static; 
+        float: none; 
+    }
+}
+
+
+.partneri {
+    display: flex;
+    padding-left: 5px;
+    max-width: 100%; 
+    max-height: 300px; 
+    height: auto;
+    align-items: center;
+    filter: grayscale(0);
+    margin-top: 20px;
+}
+
+
+.cistic {
+    clear: both;
+}
+
+.centrovany {
+    text-align: center;
+}
+
+.reference-tlacitko {
+    background: green;
+    color: white;
+    font-size: 1.0em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+.kontakt-tlacitko {
+    background: green;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.kontakt-tlacitko:hover,
+.reference-tlacitko:hover {
+    filter: brightness(115%) contrast(85%);
+    border: 0;
+}
+
+.vlevo {
+    float: left;
+    margin-right: 10px;
+    width: 40px; 
+    height: 40px; 
+}
+
+
+#dovednosti {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dovednost {
+    width: calc(50% - 20px);
+    padding: 20px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.dovednost img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.dovednost h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.dovednost p {
+    line-height: 1.6;
+}
+
+
+#reference img {
+    border: 1px solid gray;
+    padding: 6px;
+    box-shadow: 3px 3px 6px #999999;
+    margin-right: 6px;
+    background-color: #ffffff; 
+    width: 350px; 
+    height: auto; 
+}
